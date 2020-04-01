@@ -9,14 +9,16 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
+        <!-- Styles -->
+        <link href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/ionicons.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/adminlte.min.css') }}" rel="stylesheet">
+
         <!-- Scripts -->
         <script src="{{ asset('plugins/jquery/jquery.min.js') }}" defer></script>
         <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script>
         <script src="{{ asset('js/adminlte.min.js') }}" defer></script>
-
-        <!-- Styles -->
-        <link href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/adminlte.min.css') }}" rel="stylesheet">
 
         @stack('head')
     </head>
