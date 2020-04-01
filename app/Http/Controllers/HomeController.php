@@ -22,7 +22,7 @@ class HomeController extends Controller {
      */
     public function index(Request $request) {
         $keyword = $request->get('search');
-        $perPage = 1;
+        $perPage = 5;
 
         if (!empty($keyword)) {
             $users = \App\User::where('name', 'LIKE', "%$keyword%")
